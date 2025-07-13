@@ -1,0 +1,6 @@
+# CMake build dir (most common options)
+cmake-build-debug/
+build/
+
+# CLion
+.idea/
