@@ -12,7 +12,8 @@ which can be found at [this GitHub repository](https://github.com/AngerVon2468/K
 * Clone or download [the Kotlin delegate](https://github.com/AngerVon2468/Kotlin64Recomp) and open with your [IDE of choice](#note1) (IntelliJ is recommended).
 * After the project has been set up, run the gradle task `kotlin64recompBinaries`.
 * From the root directory of the project, go to `build/bin/kotlin64recomp/releaseShared/`.
-* Copy all files within to the `kotlin/` directory of this project.
+* Copy all files within to the `kotlin/` directory of this project. **MAKE SURE TO DELETE `kotlin/libkotlin64recomp.so` FROM HERE FIRST!**
+* Replace the reference to `kotlin/libkotlin64recomp.so` in `CMakeLists.txt` with a reference to whatever library file you provided.
 * Build with CMake.
 * You'll find the library in whatever folder you use for build. In CLion it will most likely be `cmake-build-debug/`, in VSCode it will most likely be `build/`.
 
